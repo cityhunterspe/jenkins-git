@@ -1,0 +1,14 @@
+pipeline {
+    agent {
+        label 'slave' }
+    }
+    stages {
+        stage('hello'){
+            steps {
+                sh 'node --version'
+                sh 'java --version'
+                echo "get working directoy"
+                sh 'pwd'
+            }
+        }
+    }
