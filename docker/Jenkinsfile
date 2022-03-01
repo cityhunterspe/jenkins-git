@@ -5,8 +5,7 @@ pipeline {
     stages {
         stage('hello'){
             steps {
-                sh 'node --version'
-                sh 'java --version'
+                sh 'java -version'
                 echo "get working directoy"
                 sh 'pwd'
             }
